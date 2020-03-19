@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+   
+    
+    
+   
+}
+
+
+header {
+	 text-align: center;
+    background-color: #018fa7;
+    height: 150px -webkit-box-shadow: 10px 15px 50px 3px #656565;
+    -moz-box-shadow: 10px 15px 50px 3px #656565;
+    filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=15, Color='#656565', Positive='true');
+    zoom: 1;
+    box-shadow: 10px 15px 50px 3px #656565;
+    z-index: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: dimgrey;
+    width: 100%;
+}
+
+#muuf {
+	
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+#efficace {
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#dauphin {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+aside {
+    font-family: Helvetica, sans-serif;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(#018fa7, #018fa7, #018fa7, white);
+    /*background-color: #018fa7;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.c1 {
+    font-family: Helvetica, sans-serif;
+    height: 20px;
+
+    background-color: #434242;
+
+
+    text-align: right;
+}
+
+.voitAnim{
+    position: fixed;
+    top: 670px;
+    right: 0px;
+    z-index: 0;
+    
+    
+    
+}
+
+.bienvenue{
+	
+	font-family: Helvetica, sans-serif;
+	font-size: 100px;
+	color:red;
+	position:absolute;
+	top: 230px;
+	left: 400px;
+	
+}
+
+.menu {
+	position:absolute;
+	top: 380px;
+	left: 210px;
+}

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+   
+    
+    
+   
+}
+
+
+header {
+	 text-align: center;
+    background-color: #018fa7;
+    height: 150px -webkit-box-shadow: 10px 15px 50px 3px #656565;
+    -moz-box-shadow: 10px 15px 50px 3px #656565;
+    filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=15, Color='#656565', Positive='true');
+    zoom: 1;
+    box-shadow: 10px 15px 50px 3px #656565;
+    z-index: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: dimgrey;
+    width: 100%;
+}
+
+#muuf {
+	
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+#efficace {
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#dauphin {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+aside {
+    font-family: Helvetica, sans-serif;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(#018fa7, #018fa7, #018fa7, white);
+    /*background-color: #018fa7;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.c1 {
+    font-family: Helvetica, sans-serif;
+    height: 20px;
+
+    background-color: #434242;
+
+
+    text-align: right;
+}
+
+.voitAnim{
+    position: fixed;
+    top: 670px;
+    right: 0px;
+    z-index: 0;
+    
+    
+    
+}
+
+
+.menu {
+	position:absolute;
+	top: 400px;
+	left: 500px;
+}
+
+/* Général ------------------------------------------------------------------------------------- */
+
+body, p, legend, label, input {
+    font: normal 15pt verdana, helvetica, sans-serif;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px #018fa7 solid;
+}
+
+legend {
+    font-weight: bold;
+    color: #018fa7;
+}
+
+/* Forms --------------------------------------------------------------------------------------- */
+
+form label {
+    float: left;
+    width: 350px;
+    margin: 3px 0px 0px 0px;
+}
+
+form input {
+    margin: 3px 3px 0px 0px;
+    border: 1px #999 solid;
+}
+
+form input.sansLabel {
+    margin-left: 200px;
+}
+
+form .requis {
+    color: #c00;
+}
+
+form .erreur {
+    color: #900;
+}
+
+form .succes {
+    color: #090;
+}
+
+form .info {
+    font-style: italic;
+    color: #E8A22B;
+}
+
+
+

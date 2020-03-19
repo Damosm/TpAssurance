@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<meta charset="utf-8" />
+	<title>La Muuf, elle assure !!!</title>
+	<h:outputStylesheet library="default" name="css/devis.css" />
+
+
+</h:head>
+
+<h:body>
+	<header>
+
+
+		<h:graphicImage library="default" id="muuf" name="images/maaf.jpg" />
+
+		<h:graphicImage library="default" id="efficace"
+			name="images/maaf_cest_efficace.gif" />
+
+		<h:graphicImage library="default" id="dauphin"
+			name="images/dauphin.gif" />
+	</header>
+
+
+<div class="devis">
+	 <h:graphicImage library="default" class="assuranceAuto" name="images/devis.jpg" />
+	 </div>
+
+	<br />
+
+	<div class="defileParent">
+		<span class="defile" data-text=" Contrats à prix discount !!!! ">
+
+		</span>
+	</div>
+
+	<div class="div">
+
+		<h:form class="form1" name="form">
+		
+		
+			<br />
+
+			<label>Marque :</label>
+			<br />
+
+
+			<h:selectOneMenu id="listMarque" value="#{modeleBean.idMarque}" >				
+				<f:selectItem  itemLabel="---Choix---" />
+				<f:selectItems value="#{marqueBean.listeMarques}" var="marque" itemValue="#{marque.idMarque}" itemLabel="#{marque.nomMarque}" />
+				<f:ajax event="change" listener="#{modeleBean.selectionChanged}" render="listModele" />
+			</h:selectOneMenu>
+
+			<br />
+			<br />
+
+			<label>Modèle :</label>
+			<br />
+			<h:selectOneMenu id="listModele" value="#{modeleBean.idModele}" >
+				<f:selectItem  itemLabel="---Choix---" />
+				<f:selectItems value="#{modeleBean.listeModele}" var="modele" itemValue="#{modele.idModele}" itemLabel="#{modele.nomModele}" />
+			<f:ajax event="change" listener="#{modeleBean.selectionChanged}" />
+			</h:selectOneMenu>			
+			
+
+			<br />
+			<br />
+			<label>Age :</label>
+			<br />
+
+			<h:selectOneMenu id="listAge" value="#{modeleBean.idAge}" >
+				<f:selectItem  itemLabel="---Choix---" />
+				<f:selectItems value="#{ageBean.listeAge}" var="age" itemValue="#{age.idAge}" itemLabel="#{age.valeurAge}" />		
+				<f:ajax event="change" listener="#{modeleBean.selectionChanged}" render="prixTotal"/>
+			</h:selectOneMenu>	
+			
+			
+		</h:form>
+
+		<br />
+
+	<h:form>
+		<h:commandButton value="Valider">
+		<f:ajax event="click" action="#{modeleBean.submit}" render="prixTotal"></f:ajax>
+		
+		</h:commandButton>
+		
+		<br /> <br /> <br />
+
+	
+		
+	
+		<label>Prix :</label> 
+		<h:outputText id="prixTotal" value="#{modeleBean.getPrixTotal()}" /> Euros
+		
+		
+	</h:form>
+	
+		<h:graphicImage library="default" class="voitAnim"
+			name="images/voitAnim.gif" />
+	</div>
+	<h:graphicImage library="default" id="image" class="image"
+		name="images/vide.jpg" />
+	<section>
+		<aside></aside>
+
+	</section>
+	<footer>
+		<div class="c1">
+			<h:form action="/ma-page-de-traitement" method="post">
+				<div>
+					<p>Contact @</p>
+
+				</div>
+			</h:form>
+		</div>
+
+
+	</footer>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<h:outputScript library="default" name="javascript/index.js" />
+</h:body>
+
+</html>

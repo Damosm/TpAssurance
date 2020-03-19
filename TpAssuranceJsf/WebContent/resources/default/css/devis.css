@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+
+header {
+	text-align: center;
+    background-color: #018fa7;
+    height: 150px -webkit-box-shadow: 10px 15px 50px 3px #656565;
+    -moz-box-shadow: 10px 15px 50px 3px #656565;
+    filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=15, Color='#656565', Positive='true');
+    zoom: 1;
+    box-shadow: 10px 15px 50px 3px #656565;
+    z-index: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: dimgrey;
+    width: 100%;
+}
+
+.devis{
+	position:absolute;
+	top: 400px;
+	left: 230px;
+	
+	
+}
+
+#muuf {
+    justify-content: center;
+    z-index: 1;
+}
+
+#efficace {
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#dauphin {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+aside {
+    font-family: Helvetica, sans-serif;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(#018fa7, #018fa7, #018fa7, white);
+    /*background-color: #018fa7;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.c1 {
+    font-family: Helvetica, sans-serif;
+    height: 20px;
+
+    background-color: #434242;
+
+
+    text-align: right;
+}
+
+.voitAnim{
+    position: fixed;
+    top: 670px;
+    right: 0px;
+    z-index: 0;
+    }
+    
+    .image {
+    position: fixed;
+    top: 600px;
+    left: 700px;
+    z-index: 5;
+}
+    
+    .div {
+    font: normal 15pt verdana, helvetica, sans-serif;
+    
+    position: fixed;
+    top: 500px;
+    left: 230px;
+    /*
+    width: 300px;
+    
+    height: 20px;
+    
+    margin-left: -150px;
+    
+    margin-top: -100px;*/
+}
+
+.defileParent {
+
+    display: block;
+    margin: 3em auto;
+    overflow: hidden;
+    position: relative;
+    table-layout: fixed;
+    width: 700px;
+}
+
+.defile {
+    font-family: Helvetica, sans-serif;
+    font-size: 50px;
+    display: block;
+    -webkit-animation: linear marqueelike 20s infinite;
+    -moz-animation: linear marqueelike 20s infinite;
+    -o-animation: linear marqueelike 20s infinite;
+    -ms-animation: linear marqueelike 20s infinite;
+    animation: linear marqueelike 20s infinite;
+    margin-left: -100%;
+    padding: 0 5px;
+    text-align: left;
+    height: 50px;
+}
+
+
+.defile:after {
+    content: attr(data-text);
+    position: absolute;
+    white-space: nowrap;
+    padding-left: 700px;
+}
+
+@-webkit-keyframes marqueelike {
+    0%,
+    100% {
+        margin-left: 0;
+    }
+    99.99% {
+        margin-left: -100%;
+    }
+}
+
+@-moz-keyframes marqueelike {
+    0%,
+    100% {
+        margin-left: 0;
+    }
+    99.99% {
+        margin-left: -100%;
+    }
+}
+
+@-o-keyframes marqueelike {
+    0%,
+    100% {
+        margin-left: 0;
+    }
+    99.99% {
+        margin-left: -100%;
+    }
+}
+
+@-ms-keyframes marqueelike {
+    0%,
+    100% {
+        margin-left: 0;
+    }
+    99.99% {
+        margin-left: -100%;
+    }
+}
+
+@keyframes marqueelike {
+    0%,
+    100% {
+        margin-left: 0;
+    }
+    99.99% {
+        margin-left: -100%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .defileParent {
+        display: block;
+        margin: 3em auto;
+        overflow: hidden;
+        position: relative;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .defile {
+        display: block;
+        -webkit-animation: linear marqueelike 15s infinite;
+        -moz-animation: linear marqueelike 15s infinite;
+        -o-animation: linear marqueelike 15s infinite;
+        -ms-animation: linear marqueelike 15s infinite;
+        animation: linear marqueelike 15s infinite;
+        margin-left: -100%;
+        padding: 0 5px;
+        text-align: left;
+        height: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
